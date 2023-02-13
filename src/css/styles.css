@@ -66,7 +66,7 @@ main {
   margin: 0 auto;
   padding: 10px;
   border-radius: 7px;
-  border: 1px solid grey;
+  border: 1px solid gray;
 }
 
 .container header #btn-search {
@@ -76,13 +76,15 @@ main {
   padding: 10px;
   border-radius: 7px;  
   cursor: pointer;
-  border: 1px solid grey;
+  background-color: #e7e7e7;
+  border: 1px solid gray;
+  transition: 0.3s ease-in-out;
 }
 
 .container header #btn-search:hover {
-  background-color: hotpink;
+  background-color: rgb(119, 201, 141);
   color: #ffffff;
-  border-color: #ffffff;
+  border: none;
 }
 
 .container .profile-data{
@@ -106,7 +108,7 @@ main {
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 10px solid rgb(119, 201, 141);
 }
 
 .container .profile-data .info h1{
@@ -121,10 +123,10 @@ main {
   line-height: 23px;
 }
 
-/* REPOSITORIES */
-
 .container .profile-data .repositories h2{
-  margin-bottom: 30px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -136,20 +138,61 @@ main {
 
 .container .profile-data .repositories ul li a{
   padding: 20px;
-  border: 1px solid grey;  
-  margin: 20px;
+  background-color: #e7e7e7;
+  border: 1px solid gray;  
+  margin: 15px;
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
 }
 
 .container .profile-data .repositories ul li a:hover{
-  background-color:hotpink;
-  color: #fff
+  background-color:rgb(119, 201, 141);
+  color: #fff;
+  border: none;
 }
 
 .container .profile-data.hide{
   display: none;
+}
+
+.container .profile-data .repositories ul li a i{
+  padding: 10px;
+}
+
+.container .profile-data .events ul{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.container .profile-data .events h2{
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.container .profile-data .events ul li{
+  width: 100%;  
+  margin: 10px;
+}
+
+.container .profile-data .events ul li strong{
+  font-weight: 700;
+}
+
+.container .profile-data .events ul li h4,
+.container .profile-data .events ul li p{
+  margin-bottom: 10px;
+}
+ 
+.container .profile-data .events{
+  margin-top: 50px;
+  background-color: #e7e7e7;
+  border: 5px solid rgb(119, 201, 141);
+  border-radius: 10px;
+  padding: 40px 20px 0 20px;
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1280px) {
